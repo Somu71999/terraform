@@ -1,3 +1,11 @@
+name: AWS Authentication Test
+
+on:
+  push:
+    branches:
+      - main   # Trigger on push to the main branch
+  workflow_dispatch:  # Allows manual trigger via GitHub UI
+
 jobs:
   test-aws-auth:
     runs-on: ubuntu-latest
